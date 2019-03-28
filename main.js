@@ -13,7 +13,7 @@ function createWindow()
     //makes it only a single instance
     makeSingleInstance()
 
-    loadScripts()
+    let menuFunction = require('menu.js')
 
     win = new BrowserWindow({width: 800, height: 600, resizable: false});
 
@@ -23,7 +23,7 @@ function createWindow()
         win = null 
     })
 
-    buildMenu();
+    menuFunction.buildMenu()
 }
 
 app.on('ready', createWindow)
@@ -65,7 +65,3 @@ function makeSingleInstance () {
     })
   }
   
-  function loadScripts() 
-  {
-    require('menu.js')();
-  }
