@@ -1,14 +1,23 @@
 {
     "name": "cryptochecker",
     "productName": "cryptochecker",
-    "version": "1.0",
+    "version": "1.0.0",
+    "author": "Stone Sha",
     "description": "Monitor cryptocurrencies and convert between different real world currencies.",
     "main": "main.js",
     "scripts": {
-        "start": "electron ."
+        "start": "electron .",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "repository": "https://github.com/stonesha/cryptochecker",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stonesha/cryptochecker.git"
+      },
     "dependencies": {
         "electron": "^4.1.1"
-    }
+    },
+    "bugs": {
+        "url": "https://github.com/stonesha/cryptochecker/issues"
+    },
+    "homepage": "https://github.com/stonesha/cryptochecker#readme"
 }
