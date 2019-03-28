@@ -1,6 +1,6 @@
-const {BrowserWindow, app} = require('electron')
-const path = require('path')
-const glob = require('glob')
+const {BrowserWindow, app} = require('electron'),
+    path = require('path'),
+    glob = require('glob')
 
 //if mac app store
 if (process.mas) app.setName('cryptochecker')
@@ -13,6 +13,8 @@ function createWindow()
     //makes it only a single instance
     makeSingleInstance()
 
+    loadScripts()
+
     win = new BrowserWindow({width: 800, height: 600, resizable: false});
 
     win.loadFile('src/index.html')
@@ -20,6 +22,8 @@ function createWindow()
     win.on('closed', () => {
         win = null 
     })
+
+    buildMenu();
 }
 
 app.on('ready', createWindow)
@@ -61,8 +65,7 @@ function makeSingleInstance () {
     })
   }
   
-  function loadScript() 
+  function loadScripts() 
   {
-    const files = glob.sync(path.join(__dirname, 'scripts/**/*.js'))
-    files.forEach((file) => { require(file) })
+    require('menu.js')();
   }
