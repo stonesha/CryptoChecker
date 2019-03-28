@@ -12,12 +12,12 @@
     "repository": {
         "type": "git",
         "url": "git+https://github.com/stonesha/cryptochecker.git"
-      },
-    "dependencies": {
-        "electron": "^4.1.1"
     },
     "bugs": {
         "url": "https://github.com/stonesha/cryptochecker/issues"
     },
-    "homepage": "https://github.com/stonesha/cryptochecker#readme"
+    "homepage": "https://github.com/stonesha/cryptochecker#readme",
+    "dependencies": {
+        "electron": "^4.1.1"
+    }
 }
