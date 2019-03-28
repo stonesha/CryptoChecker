@@ -4,6 +4,7 @@
     "version": "1.0.0",
     "author": "Stone Sha",
     "description": "Monitor cryptocurrencies and convert between different real world currencies.",
+    "license": "UNLIICENSED",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
@@ -19,5 +20,8 @@
     "homepage": "https://github.com/stonesha/cryptochecker#readme",
     "dependencies": {
         "electron": "^4.1.1"
+    },
+    "devDependencies": {
+        "glob": "^7.1.3"
     }
 }

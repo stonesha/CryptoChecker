@@ -1,12 +1,20 @@
 const {BrowserWindow, app} = require('electron')
+const path = require('path')
+const glob = require('glob')
+
+//if mac app store
+if (process.mas) app.setName('cryptochecker')
 
 let win
 
+//creates main window
 function createWindow()
 {
-    win = new BrowserWindow({width: 800, height: 600, frame: false});
+    //makes it only a single instance
+    makeSingleInstance()
 
-    //win.loadFile('/src/index.html')
+    win = new BrowserWindow({width: 800, height: 600, resizable: false});
+
     win.loadFile('src/index.html')
 
     win.on('closed', () => {
@@ -33,3 +41,28 @@ app.on('activate', () => {
     }
 })
 
+// Make this app a single instance app.
+//
+// The main window will be restored and focused instead of a second window
+// opened when a person attempts to launch a second instance.
+//
+// Returns true if the current version of the app should quit instead of
+// launching.
+function makeSingleInstance () {
+    if (process.mas) return
+  
+    app.requestSingleInstanceLock()
+  
+    app.on('second-instance', () => {
+      if (mainWindow) {
+        if (mainWindow.isMinimized()) mainWindow.restore()
+        mainWindow.focus()
+      }
+    })
+  }
+  
+  function loadScript() 
+  {
+    const files = glob.sync(path.join(__dirname, 'scripts/**/*.js'))
+    files.forEach((file) => { require(file) })
+  }
