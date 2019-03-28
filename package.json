@@ -1,0 +1,15 @@
+{
+    "name": "cryptochecker",
+    "productName": "cryptochecker",
+    "version": "1.0",
+    "description": "Monitor cryptocurrencies and convert between different real world currencies.",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": "https://github.com/stonesha/cryptochecker",
+    "dependencies": {
+        "electron": "^4.1.1"
+
+    }
+}
