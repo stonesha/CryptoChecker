@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "author": "Stone Sha",
     "description": "Monitor cryptocurrencies and convert between different real world currencies.",
-    "license": "UNLIICENSED",
+    "license": "UNLICENSED",
     "main": "main.js",
     "scripts": {
         "start": "electron .",
