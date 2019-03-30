@@ -19,5 +19,15 @@ function getETH(){
     })
 }
 
+function getEOS()
+{
+    axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=EOS&tsyms=USD')
+    .then(res => {
+        const EOS_cryptos = res.data.EOS.USD
+        EOS_price.innerHTML = '$'+EOS_cryptos.toLocaleString('en')
+    })
+}
+
 getBTC();
 getETH();
+getEOS();
