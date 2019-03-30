@@ -14,9 +14,9 @@ Axios https://www.npmjs.com/package/axios
 - [x] Integrate CryptoCompare API
 - [x] Get first version running
 - [x] Add cryptocurrency monitoring
-- [ ] Add Top 10 Cryptocurrencies
-- [ ] Add Icons
+- [x] Add Icons
+- [ ] Make executables
 - [ ] Add more features (price tracking, graphs, etc.)
 
 ## Credits
-Crypto Icons by Myroslav Fanta
+Crypto Icons by Cryptocompare
