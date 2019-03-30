@@ -61,9 +61,15 @@ function getNEO()
     })
 }
 
-getBTC();
-getETH();
-getEOS();
-getLTC();
-getXRP();
-getNEO();
+function getCrypto()
+{
+    getBTC();
+    getETH();
+    getEOS();
+    getLTC();
+    getXRP();
+    getNEO();
+}
+
+getCrypto();
+setInterval(getCrypto(), 30000) //30000 ms = 30 seconds
