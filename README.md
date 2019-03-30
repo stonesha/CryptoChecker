@@ -10,7 +10,7 @@ CoinMarketCap API https://coinmarketcap.com/ \
 Axios
 
 ## To-Do
-- [ ] Integrate CoinAPI
+- [ ] Integrate CoinMarketAPI
 - [ ] Get first version running
 - [ ] Add cryptocurrency monitoring
 - [ ] Add more features (price tracking, graphs, etc.)
