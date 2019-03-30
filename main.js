@@ -5,6 +5,9 @@ const {BrowserWindow, app} = require('electron'),
 //if mac app store
 if (process.mas) app.setName('cryptochecker')
 
+//refreshing enabled when changes are made
+require('electron-reload')(__dirname)
+
 let win
 
 //creates main window

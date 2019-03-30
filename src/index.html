@@ -2,8 +2,29 @@
 <html>
     <head>
         <title>Main Page</title>
+        <link rel = "stylesheet" href="../src/index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     </head>
-    <body bgcolor = '#3c3c3c'>
-        
+    <body>
+        <div class = "row">
+            <div id = "price-container">
+                <p class = "subtext"> Current BTC USD</p>
+                <h1 id = "price">Loading...</h1>
+            </div>
+        </div>
+
+        <p class="notify">Notify me when BTC reaches..</p>
+
+        <div class="row2">
+            <div>
+                <input id="notifyVal" placeholder="USD">
+            </div>
+            <button id="updateBtn">Update</button>
+        </div>
+    
+            <a id="closeBtn">Close Window</a><br>
+    
+        </div>
+        <script src = "index.js"></script>
     </body>
 </html>

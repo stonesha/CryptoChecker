@@ -5,8 +5,8 @@ Monitor cryptocurrencies in your desired real world currency.
 Node.js https://nodejs.org/en/ \
 Node Package Manager https://www.npmjs.com/get-npm \
 Electron API https://electronjs.org/docs/api \
+- Electron Reload \
 Glob https://www.npmjs.com/package/glob \
-CoinMarketCap API https://coinmarketcap.com/ \
 Axios
 
 ## To-Do
